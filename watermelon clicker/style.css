@@ -1,0 +1,83 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #fc6c85 0%, #54a27d 28.53%, #292b2c 75.52%);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    font-family: Roboto, sans-serif;
+}
+
+.feedback-button {
+    background: blue;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    height: auto;
+}
+
+.feedback-button:hover {
+    color: #292b2c;
+    background: green;
+    text-decoration: underline;
+}
+
+.money{
+    color: white;
+    text-align: center;
+}
+
+.main-button {
+    border: 5px solid transparent;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-button img {
+    height: 200px;
+    width: 200px;
+}
+
+.shop h1{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    text-align: center;
+}
+
+.shopButton {
+    display: inline-block;
+    text-align: center;
+}
+
+.shop .content .shopButton{
+    border: 5px;
+    border-radius: 30px;
+    margin: 20px;
+    background: white;
+    padding: 20px 35px 20px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .content {
+        text-align: center;
+    }
+    
+    .shopButton {
+        display: block;
+        text-align: center;
+    }
+}

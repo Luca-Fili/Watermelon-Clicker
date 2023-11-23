@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermelon Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="feedback-button">
+        <a href="/feedback.html" style="text-decoration: none; color: white;">Feedback</a>
+    </div>
+    <div class="money">
+        <h1>Money:</h1>
+        <div id="scoreboard">
+            <p>Watermelons: <span id="score">0</span></p>
+            <p>Multiplier: <span id="multiplier">1x</span></p>
+        </div>
+    </div>
+
+    <div class="main-button" id="mainButton">
+        <a onclick="money()">
+            <img src="/Photos/watermelon.png" alt="Click Here For Watermelons">
+        </a>
+    </div>
+
+    <div class="shop">
+        <h1>Shop</h1>
+        <div class="content">
+            <div class="shopButton">
+                <a onclick="buy('worker', 25)">Worker: 25wm Own: <span id="workerCount">0</span></a>
+            </div>
+            <div class="shopButton">
+                <a onclick="buy('farm', 100)">Farm: 100wm Own: <span id="farmCount">0</span></a>
+            </div>
+            <div class="shopButton">
+                <a onclick="buy('factory', 500)">Factory: 500wm Own: <span id="factoryCount">0</span></a>
+            </div>
+            <div class="shopButton">
+                <a onclick="buy('warehouse', 1000)">Warehouse: 1000wm Own: <span id="warehouseCount">0</span></a>
+            </div>
+            <div class="shopButton">
+                <a onclick="buy('plant', 2500)">Plant: 2500wm Own: <span id="plantCount">0</span></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
